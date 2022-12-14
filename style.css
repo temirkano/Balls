@@ -1,0 +1,46 @@
+.parent {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 70vh;
+    align-items: center;
+}
+.block {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.ball {
+    text-align: center;
+    text-transform: lowercase;
+    padding-top: 50px;
+}
+
+.bls {
+    text-transform: uppercase;
+}
+
+body {
+    background: linear-gradient(45deg, #ec034d, #b575ca);
+    background-size: 500% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 60%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1{
+        color: rgb(91, 2, 2);
+    };
+}
